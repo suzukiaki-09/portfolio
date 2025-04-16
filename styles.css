@@ -1,0 +1,304 @@
+
+/* ====== STATIC STYLING (NO ANIMATIONS) ====== */
+
+/* Matrix Canvas Effect - static positioning only */
+.matrix-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+/* Body styles - no transitions */
+body {
+    /* Removed transition */
+}
+
+body.loaded {
+    /* Removed animation */
+}
+
+/* Removed warp transition */
+body.warp-transition::after {
+    display: none;
+}
+
+/* Removed scanner line effect */
+.scanner-line {
+    display: none;
+}
+
+/* Removed card scanner effect */
+.card-scanner {
+    display: none;
+}
+
+/* Form submission styling - static only */
+.contact-form.submitting {
+    position: relative;
+}
+
+.contact-form.submitting::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.05);
+    /* Removed animation */
+}
+
+.contact-form.submitted::after {
+    content: 'Message Sent!';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(10, 10, 10, 0.9);
+    color: var(--accent-color);
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    /* Removed animation */
+}
+
+/* Removed floating particles animation and keyframes */
+
+/* Progress bar - static styling */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+    z-index: 9999;
+    box-shadow: 0 0 10px var(--accent-color);
+    width: 0%;
+    /* Removed transition */
+}
+
+/* Skill tags - static styling */
+.skill-tag {
+    position: relative;
+    overflow: hidden;
+    /* Removed animation */
+    opacity: 1;
+    transform: none;
+}
+
+.skill-tag::after {
+    display: none; /* Removed shimmer effect */
+}
+
+/* Reveal - static styling */
+.reveal {
+    opacity: 1;
+    transform: none;
+    /* Removed transition */
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: none;
+}
+
+/* Hero elements - static styling */
+.hero .fade-in {
+    opacity: 1;
+    transform: none;
+    /* Removed transition */
+}
+
+.hero .fade-in.active {
+    opacity: 1;
+    transform: none;
+}
+
+/* Button hover - static styling */
+button:hover, 
+.cta-button:hover, 
+.submit-btn:hover {
+    /* Removed box-shadow animation */
+}
+
+/* Project card - static styling */
+.project-card:hover {
+    /* Removed transform and animation effects */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-color);
+}
+
+.project-card::before {
+    display: none; /* Removed gradient effect */
+}
+
+.project-card:hover::before {
+    /* Removed animation */
+}
+
+/* Contact link - static styling */
+.contact-link i {
+    /* Removed transition */
+}
+
+.contact-link:hover i {
+    transform: none;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    /* Removed box-shadow effect */
+}
+
+/* Loading screen - static styling */
+.loading-screen {
+    background: var(--bg-color);
+}
+
+.loading-screen::after {
+    content: 'LOADING';
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    letter-spacing: 5px;
+    /* Removed animation */
+}
+
+.loader {
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top-color: var(--accent-color);
+    border-radius: 50%;
+    /* Removed animation */
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+}
+
+/* Scrollbar - static styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Removed all @keyframes animations */
+
+/* Cursor - static styling */
+.custom-cursor {
+    mix-blend-mode: exclusion;
+    background: rgba(10, 10, 10, 0.1);
+    backdrop-filter: blur(2px);
+    /* Removed transition */
+}
+
+/* Particles container - static styling */
+.particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(10, 10, 10, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.particle {
+    /* Removed box-shadow effect */
+}
+
+/* Subtitle - static styling */
+.subtitle::after {
+    display: none; /* Removed blinking cursor effect */
+}
+
+/* Nav item hover - static styling */
+.nav-item:hover {
+    color: var(--accent-color);
+    /* Removed text-shadow effect */
+}
+
+/* Section title - static styling */
+.section-title::after {
+    /* Removed animation */
+    width: 6rem;
+    background: var(--accent-color);
+}
+
+/* Project image - static styling */
+.project-image {
+    overflow: hidden;
+}
+
+.project-image img,
+.placeholder-project {
+    /* Removed transition */
+}
+
+.project-card:hover .project-image img,
+.project-card:hover .placeholder-project {
+    transform: none; /* Removed scale effect */
+}
+
+/* Scroll indicator - static styling */
+.scroll-indicator {
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-indicator i {
+    position: relative;
+    /* Removed animation */
+    color: var(--accent-color);
+    z-index: 1;
+}
+
+.scroll-indicator::after {
+    display: none; /* Removed shimmer effect */
+}
+
+/* Social links hover - static styling */
+.social-links a:hover {
+    transform: none; /* Removed transform effect */
+    /* Removed box-shadow */
+}
+
+/* Form group focus - static styling */
+.form-group input:focus,
+.form-group textarea:focus {
+    /* Removed box-shadow */
+}
+
+/* Placeholder text - static styling */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    /* Removed transition */
+}
+
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+    opacity: 0.5;
+    transform: none; /* Removed translate effect */
+}
